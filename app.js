@@ -12,3 +12,9 @@
   ];
 
   
+  function table(obj) {
+    let table = document.createElement("table");
+  }
+
+let row = document.createElement("tr");
+table.appendChild(row);
