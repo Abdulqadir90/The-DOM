@@ -12,9 +12,9 @@
   ];
 
   function tableHead(obj) {                            
-   let thead = document.createElement('thead');      //create head cells
-   let row = document.createElement('tr');            
-   let arr = Object.keys(obj[0]);
+   let thead = document.createElement('thead');      //created head cells
+   let row = document.createElement('tr');            // created row 
+   let arr = Object.keys(obj[0]);                    //returning the keys in a Array, ignoring the values
    for (let i = 0; i < arr.length; i++) {
     let th = document.createElement('th');
     th.innerText = arr[i];
