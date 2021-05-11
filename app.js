@@ -30,9 +30,9 @@
       
     for (let i = 0; i<obj.length; i++) {          //looping over array (mountain)
       //console.log('obj[i]', obj[i]);
-      let row = document.createElement('tr');      //
-      for (let j in obj[i]) {
-        //console.log('j', j)
+      let row = document.createElement('tr');      // creates a row
+      for (let j in obj[i]) {                      // 
+        //console.log('j', j) 
         //console.log('obj[i]', obj[i])
         let td = document.createElement('td');
         td.innerText = obj[i][j];
