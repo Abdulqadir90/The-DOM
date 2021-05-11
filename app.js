@@ -31,7 +31,7 @@
     for (let i = 0; i<obj.length; i++) {          //looping over array (mountain)
       //console.log('obj[i]', obj[i]);
       let row = document.createElement('tr');      // creates a row
-      for (let j in obj[i]) {                      // looping over object [i], the 1st object which will be kilomanjaro and so forth
+      for (let j in obj[i]) {                      // looping over object [i], the 1st object which will be kilomanjaro, 2nd loop will be 5895, 3rd loop will be tanzania
         //console.log('j', j) 
         //console.log('obj[i]', obj[i])
         let td = document.createElement('td');   // appending to the row
