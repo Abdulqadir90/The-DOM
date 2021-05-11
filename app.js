@@ -28,9 +28,9 @@
     let table = document.createElement("table");
     let tbody = document.createElement('tbody');
       
-    for (let i = 0; i<obj.length; i++) {
+    for (let i = 0; i<obj.length; i++) {          //looping over array (mountain)
       //console.log('obj[i]', obj[i]);
-      let row = document.createElement('tr');
+      let row = document.createElement('tr');      //
       for (let j in obj[i]) {
         //console.log('j', j)
         //console.log('obj[i]', obj[i])
