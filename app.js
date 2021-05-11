@@ -34,7 +34,7 @@
       for (let j in obj[i]) {                      // looping over object [i], the 1st object which will be kilomanjaro and so forth
         //console.log('j', j) 
         //console.log('obj[i]', obj[i])
-        let td = document.createElement('td');
+        let td = document.createElement('td');   // appending to the row
         td.innerText = obj[i][j];
         row.appendChild(td);
       }
