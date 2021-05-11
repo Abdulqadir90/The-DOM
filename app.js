@@ -15,7 +15,7 @@
    let thead = document.createElement('thead');      //created head cells
    let row = document.createElement('tr');            // created row 
    let arr = Object.keys(obj[0]);                    //returning the keys in a Array, ignoring the values
-   for (let i = 0; i < arr.length; i++) {
+   for (let i = 0; i < arr.length; i++) {             //looping over the keys
     let th = document.createElement('th');
     th.innerText = arr[i];
     row.appendChild(th);
