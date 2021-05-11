@@ -38,11 +38,10 @@
         td.innerText = obj[i][j];
         row.appendChild(td);
       }
-      tbody.appendChild(row);
+      tbody.appendChild(row);        // pushing row into the body
     }
     table.appendChild(tableHead(MOUNTAINS));
     table.appendChild(tbody);
-    console.log('table', table);
     document.querySelector('.tableDisplay').appendChild(table);
   }
 tableBody(MOUNTAINS);
