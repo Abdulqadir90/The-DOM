@@ -11,10 +11,38 @@
     {name: "Mont Blanc", height: 4808, place: "Italy/France"}
   ];
 
-  
-  function table(obj) {
-    let table = document.createElement("table");
+  function tableHead(obj) {                            
+   let thead = document.createElement('thead');      //create head cells
+   let row = document.createElement('tr');            
+   let arr = Object.keys(obj[0]);
+   for (let i = 0; i < arr.length; i++) {
+    let th = document.createElement('th');
+    th.innerText = arr[i];
+    row.appendChild(th);
+   }
+   thead.appendChild(row)
+   return thead;
   }
 
-let row = document.createElement("tr");
-table.appendChild(row);
+  function tableBody(obj) {
+    let table = document.createElement("table");
+    let tbody = document.createElement('tbody');
+      
+    for (let i = 0; i<obj.length; i++) {
+      //console.log('obj[i]', obj[i]);
+      let row = document.createElement('tr');
+      for (let j in obj[i]) {
+        //console.log('j', j)
+        //console.log('obj[i]', obj[i])
+        let td = document.createElement('td');
+        td.innerText = obj[i][j];
+        row.appendChild(td);
+      }
+      tbody.appendChild(row);
+    }
+    table.appendChild(tableHead(MOUNTAINS));
+    table.appendChild(tbody);
+    console.log('table', table);
+    document.querySelector('.tableDisplay').appendChild(table);
+  }
+tableBody(MOUNTAINS);
