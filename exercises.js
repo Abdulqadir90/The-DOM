@@ -48,3 +48,11 @@
 
 // tough, i did not get
 
+// 3. Write a JavaScript program to set the background color of a paragraph.
+
+// function backgroundColor()
+// {
+// found = document.getElementsByTagName("p");
+// variable.style.backgroundColor = "rgb(300, 10, 10)";
+
+// }
