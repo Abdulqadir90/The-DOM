@@ -96,14 +96,53 @@
 // <input type="button" onclick="insert_Row()" value="Insert row"> 
 // </body></html>
 
-function insert_row()
-{
-let table = document.getElementsById("sampleTable");
-let row = table.insert_row(0);
-let one = row.insertCell(0)
-let two = row.insert_row(1)
+// function insert_row()
+// {
+// let table = document.getElementsById("sampleTable");
+// let row = table.insert_row(0);
+// let one = row.insertCell(0)
+// let two = row.insert_row(1)
 
-one.innerHTML = "new cell1";
-two.innerHTML = "newcell2";
+// one.innerHTML = "new cell1";
+// two.innerHTML = "newcell2";
 
-}
+// }
+
+// 6. Write a JavaScript function that accept row, column, (to identify a particular cell) and a string to update the content of that cell. Go to the editor
+// Sample HTML file :
+
+// <!DOCTYPE html>
+// <html><head>
+// <meta charset=utf-8 />
+// <title>Change the content of a cell</title>
+// </head><body>
+// <table id="myTable" border="1">
+// <tr><td>Row1 cell1</td>
+// <td>Row1 cell2</td></tr>
+// <tr><td>Row2 cell1</td>
+// <td>Row2 cell2</td></tr>
+// <tr><td>Row3 cell1</td>
+// <td>Row3 cell2</td></tr>
+// </table><form>
+// <input type="button" onclick="changeContent()" value="Change content">
+// </form></body></html>
+
+// not done yet
+
+// 7. Write a JavaScript function that creates a table, accept row, column numbers from the user, and input row-column number as content (e.g. Row-0 Column-0) of a cell. Go to the editor
+// Sample HTML file :
+
+// <!DOCTYPE html>
+// <html>
+// <head>
+// <meta charset=utf-8 />
+// <title>Change the content of a cell</title>
+// <style type="text/css">
+// body {margin: 30px;}
+// </style>  
+// </head><body>
+// <table id="myTable" border="1">
+// </table><form>
+// <input type="button" onclick="createTable()" value="Create the table">
+// </form></body></html>
+
