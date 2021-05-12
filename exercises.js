@@ -56,3 +56,25 @@
 // variable.style.backgroundColor = "rgb(300, 10, 10)";
 
 // }
+
+// 4. Here is a sample html file with a submit button. 
+// Write a JavaScript function to get the value of the href, hreflang, rel, target, 
+// and type attributes of the specified link. 
+
+function attributes() 
+{
+    let a = document.getElementsById.href;
+    alert('value of href attribute: '+a );
+    
+    let b = document.getElementsById.hreflang;
+    alert('value of hreflang attribute: '+b );
+    
+    let c = document.getElementsById.rel;
+    alert('value of rel attribute: '+c );
+    
+    let d = document.getElementsById.target;
+    alert('value of target attribute: '+d);
+    
+    let e = document.getElementsById.type;
+    alert('value of type attribute: '+e );
+}
