@@ -18,7 +18,7 @@
    for (let i = 0; i < arr.length; i++) {             //looping over the keys
     let th = document.createElement('th');             //creating 3 header cells
     th.innerText = arr[i];                             
-    row.appendChild(th);
+    row.appendChild(th);                        // adding header cells to the row
    }
    thead.appendChild(row)                        // appending row in the parent
    return thead;
